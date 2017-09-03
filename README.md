@@ -1,2 +1,2 @@
 # kot
-Sample project using Kotlin language
+Sample project using Spring Boot with Kotlin and Gradle. 
