@@ -1,2 +1,2 @@
 # kot
-sample project using Kotlin language
+Sample project using Kotlin language
