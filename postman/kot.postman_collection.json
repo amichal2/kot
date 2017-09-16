@@ -1,0 +1,22 @@
+{
+	"variables": [],
+	"info": {
+		"name": "kot",
+		"_postman_id": "634137da-9266-bc9a-52c2-979c60c0cb9c",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ping",
+			"request": {
+				"url": "http://localhost:8080/ping",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
