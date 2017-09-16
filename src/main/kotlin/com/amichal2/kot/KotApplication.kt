@@ -1,4 +1,4 @@
-package com.amichal2.kot.kot
+package com.amichal2.kot
 
 import org.springframework.boot.SpringApplication
 import org.springframework.boot.autoconfigure.SpringBootApplication
