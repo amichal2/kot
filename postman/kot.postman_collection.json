@@ -10,7 +10,7 @@
 		{
 			"name": "ping",
 			"request": {
-				"url": "http://localhost:8080/ping",
+				"url": "{{host}}/ping",
 				"method": "GET",
 				"header": [],
 				"body": {},
