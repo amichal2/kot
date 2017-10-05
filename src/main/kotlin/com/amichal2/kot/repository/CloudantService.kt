@@ -6,7 +6,7 @@ import com.cloudant.client.api.CloudantClient
 import com.cloudant.client.api.Database
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.stereotype.Service
-import java.time.LocalTime
+import java.time.LocalDateTime
 
 @Service
 class CloudantService(@Value("\${db.name}") private val dbName: String) {
@@ -16,6 +16,6 @@ class CloudantService(@Value("\${db.name}") private val dbName: String) {
                 .build();
 
         val database: Database = client.database(dbName, false)
-        database.save(EventDocument(userAgent, host, LocalTime.now()))
+        database.save(EventDocument(userAgent, host, LocalDateTime.now()))
     }
 }
