@@ -1,7 +1,7 @@
 buildscript {
 	ext {
-		kotlinVersion = '1.1.4-3'
-		springBootVersion = '2.0.0.M4'
+		kotlinVersion = '1.2.0'
+		springBootVersion = '2.0.0.M7'
 	}
 	repositories {
 		mavenCentral()
@@ -42,8 +42,8 @@ repositories {
 dependencies {
 	compile("org.jetbrains.kotlin:kotlin-stdlib-jre8:${kotlinVersion}")
 	compile("org.jetbrains.kotlin:kotlin-reflect:${kotlinVersion}")
-//	compile('org.springframework.boot:spring-boot-starter-web')
-	compile('org.springframework.boot:spring-boot-starter-webflux')
+	compile('org.springframework.boot:spring-boot-starter-web')
+//	compile('org.springframework.boot:spring-boot-starter-webflux')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 
 	compile group: 'com.cloudant', name: 'cloudant-client', version: '2.9.0'

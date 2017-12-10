@@ -11,7 +11,7 @@ class PingResource(private val pingService: PingService) {
 
     val log: Logger = LoggerFactory.getLogger(PingResource::class.java)
 
-    @GetMapping(value = "/ping", produces = arrayOf("application/json"))
+    @GetMapping("/ping", produces = ["application/json"])
     fun ping(@RequestHeader("User-Agent") userAgent: String, @RequestHeader("host") host: String): String {
         log.debug("userAgent: $userAgent")
         pingService.logEvent(userAgent, host)
